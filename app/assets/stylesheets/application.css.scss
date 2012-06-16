@@ -1,0 +1,37 @@
+@import "compass";
+
+@import "pages";
+
+@include font-face("HeydingsControlsRegular", font-files("heydings_controls-webfont.eot", "heydings_controls-webfont.eot?#iefix", "heydings_controls-webfont.woff", "heydings_controls-webfont.ttf", "heydings_controls-webfont.svg#HeydingsControlsRegular"));
+@include font-face("SilkscreenNormal", font-files("slkscr-webfont.eot", "slkscr-webfont.eot?#iefix", "slkscr-webfont.woff", "slkscr-webfont.ttf", "slkscr-webfont.svg#SilkscreenNormal"));
+@include font-face("SilkscreenBold", font-files("slkscrb-webfont.eot", "slkscrb-webfont.eot?#iefix", "slkscrb-webfont.woff", "slkscrb-webfont.ttf", "slkscrb-webfont.svg#SilkscreenNormal"));
+@include font-face("SilkscreenExpandedNormal", font-files("slkscre-webfont.eot", "slkscre-webfont.eot?#iefix", "slkscre-webfont.woff", "slkscre-webfont.ttf", "slkscre-webfont.svg#SilkscreenNormal"));
+@include font-face("SilkscreenExpandedBold", font-files("slkscreb-webfont.eot", "slkscreb-webfont.eot?#iefix", "slkscreb-webfont.woff", "slkscreb-webfont.ttf", "slkscreb-webfont.svg#SilkscreenNormal"));
+
+
+$background: #eaa957;
+$text: #eaeaea;
+$black: black;
+$padding: 10px;
+$default-border-radius: 10px;
+$default-text-shadow-color: black;
+$default-text-shadow-blur: 1px;
+$default-box-shadow-color: white;;
+$default-box-shadow-blur: 5px;
+$default-box-shadow-v: 1px;
+
+body {
+	margin: 5% 0; 
+	padding: 0px;
+	background: $text;
+}
+#content {
+	border: 1px solid rgba(0, 0, 0, .5);
+	@include border-radius;
+	@include box-shadow;
+	background: white;
+	width: 80%;
+	margin: 0px auto;
+	@include single-text-shadow;
+	color: $black;
+}

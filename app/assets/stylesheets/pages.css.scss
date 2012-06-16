@@ -1,0 +1,79 @@
+/*colors*/
+$background: #eaa957;
+$background2: #ed7b23;
+$background3: #d44413;
+/*fonts*/
+$wingdings: 'HeydingsControlsRegular';
+$silkscreen: 'SilkscreenNormal';
+/*text-size*/
+$base: 26px;
+$base-content: 18px;
+/*defaults*/
+$default-rotate: 10deg;
+$text: #eaeaea;
+
+ul {
+}
+
+li {
+	padding: 4%;
+	min-width: 40%;
+}
+
+.title {
+	margin: 0px auto;
+	font: normal 100px $wingdings;
+	text-align: center;
+	padding: 5% 5% 0 5%;
+	span#title-sword, span#subtitle-slogan {
+		font: normal 100px $silkscreen;
+		display: inline;
+	}
+	span#subtitle-slogan{
+		font: normal $base $silkscreen;
+		display:block;
+	}
+}
+.story {
+	display:inline-block;
+	list-style-type: none;
+	div.story-icon {
+		font: normal 40px $wingdings;
+	}
+	div.story-title {
+		font: normal $base $silkscreen;
+		transform: rotate(10deg);
+	}
+	div.story-content {
+		font: normal $base-content $silkscreen;
+	}
+}
+.short-story {
+	display: inline-block;
+	list-style-type: none;
+	div.short-story-icon {
+		font: normal 40px $wingdings;
+		span.short-story-title {
+		padding: 0 0 0 3%;
+		font: normal $base $silkscreen;
+		}
+	}
+}
+.info {
+	display:inline;
+}
+.exclamation {
+	font: normal $base $silkscreen;
+	text-align: center;
+	padding: 50px;
+	background: $text;
+}
+.headline {
+	font: normal $base $silkscreen;
+	text-align: left;
+	padding: 20px;
+}
+.man {
+	padding: 0 0 2% 3%;
+	left: 5%;
+}
