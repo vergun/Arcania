@@ -1,7 +1,5 @@
 @import "compass";
-
 @import "pages";
-
 @include font-face("HeydingsControlsRegular", font-files("heydings_controls-webfont.eot", "heydings_controls-webfont.eot?#iefix", "heydings_controls-webfont.woff", "heydings_controls-webfont.ttf", "heydings_controls-webfont.svg#HeydingsControlsRegular"));
 @include font-face("SilkscreenNormal", font-files("slkscr-webfont.eot", "slkscr-webfont.eot?#iefix", "slkscr-webfont.woff", "slkscr-webfont.ttf", "slkscr-webfont.svg#SilkscreenNormal"));
 @include font-face("SilkscreenBold", font-files("slkscrb-webfont.eot", "slkscrb-webfont.eot?#iefix", "slkscrb-webfont.woff", "slkscrb-webfont.ttf", "slkscrb-webfont.svg#SilkscreenNormal"));
