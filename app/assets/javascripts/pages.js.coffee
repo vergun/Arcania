@@ -4,20 +4,18 @@
 
 $(document).ready ->
 	jQuery ->
-		$('span.title-sword').delay('slow').css('visibility', 'visible').hide().fadeIn(3000, ->
-			$('span.subtitle-slogan').css('visibility', 'visible').hide().fadeIn(3000, ->
-				$('#content').css('visibility', 'visible').hide().fadeIn('slow')
+		$('span.title-sword').css('visibility', 'visible').hide().fadeIn(1000, ->
+			$('span.subtitle-slogan').css('visibility', 'visible').hide().fadeIn(1000, ->
+				$('div.header-story-icon-list').css('visibility', 'visible').hide().fadeIn(1000, ->
+					$('.content').css('visibility', 'visible').hide().fadeIn(1000, ->
+						$('#forkgithub').css('visibility', 'visible').hide().fadeIn('slow')
+					)
+				)
 			)
 		)
-		(->
-		i = 1
-		cursor = ->
-		while i < 5000
-			$('span.blinking-cursor-one').css('visibility', 'visible').hide().fadeOut('slow').fadeIn('slow')
-			$('span.blinking-cursor-two').css('visibility', 'visible').hide().delay('50').fadeOut('slow').fadeIn('slow')
-			$('span.blinking-cursor-three').css('visibility', 'visible').hide().delay('75').fadeOut('slow').fadeIn('slow')
-			$('span.blinking-cursor-four').css('visibility', 'visible').hide().delay('25').fadeOut('slow').fadeIn('slow')
-			i++
-		)()
-		cursor
-
+		$('.header-story-icon-list ul li').hover (->
+			index = $('.header-story-icon-list ul li').index(this)
+			$(".promptwords li:nth-child("+(index+1)+")").stop(true).fadeIn('fast')
+		), ->
+				$(".promptwords li").fadeOut('fast')
+			

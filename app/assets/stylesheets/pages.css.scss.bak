@@ -1,0 +1,47 @@
+.short-story {
+display: inline-block;
+list-style-type: none;
+div.short-story-icon {
+font: normal 40px $wingdings;
+span.short-story-title {
+padding: 0 0 0 3%;
+font: normal $fontsize $computerfont;
+}
+}
+}
+#story-icon-list{
+margin: 0;
+padding: 0;
+}
+.code-title, .code {
+span.blinking-cursor-one, span.blinking-cursor-two, span.blinking-cursor-three, span.blinking-cursor-four {
+font: normal $fontsize $computerfont;
+visibility: hidden;
+}
+}
+
+.story {
+display:inline-block;
+list-style-type: none;
+div.story-icon {
+font: normal $fontsize_large $wingdings;
+}
+div.story-title {
+font: normal $fontsize $computerfont;
+transform: rotate(10deg);
+}
+div.story-content {
+font: normal $fontsize_small $computerfont;
+}
+}
+.short-story {
+display: inline-block;
+list-style-type: none;
+div.short-story-icon {
+font: normal 40px $wingdings;
+span.short-story-title {
+padding: 0 0 0 3%;
+font: normal $fontsize $computerfont;
+}
+}
+}

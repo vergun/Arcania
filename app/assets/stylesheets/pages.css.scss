@@ -6,9 +6,10 @@ $yellow: yellow;
 $blue: #0066ff;
 $green: #b9fe7d;
 $orange: #ff8a00;
-$red: #ff0033;
+$red: #ff29ff;
 $purple: #9600ff;
 $black: black;
+$white: #fff;
 $dark: #262626;
 $light: #eaeaea;
 $fontsize: 26px;
@@ -16,37 +17,67 @@ $fontsize_title: 100px;
 $fontsize_large: 40px;
 $fontsize_small: 18px;
 $default-rotate: 10deg;
+$textshadow: rgba(0,0,0,0.8) 0 20px 35px;
+#forkgithub {
+visibility:hidden;
+}
+.white {
+color: $white;
+}
+.red {
+color: $red;
+}
 .title {
-padding-top: 5%;
-display: block;
-font: normal $fontsize_title $computerfont;
 text-align: center;
-	span.title {
-	padding: 5%;
-	}
-	span.title-sword, span.subtitle-slogan {
-	font: normal $fontsize_title $computerfont;
-	list-style-type: none;
-	visibility: hidden;
-	color: $dark;
-	}
-	span.subtitle-slogan{
-	font: normal $fontsize $computerfont;
-	visibility: hidden;
+padding: 5%;
 }
+.title-sword, .subtitle-slogan {
+font: normal $fontsize_title $computerfont;
+visibility: hidden;
+color: $dark;
 }
-#story-icon-list{
-margin: 0;
-padding: 0;
+.subtitle-slogan {
+display: block;
+font: normal $fontsize $computerfont;
+margin-top: 2%;
 }
-li.story {
+.header-story-icon-list{
+text-align: center;
+visibility: hidden;
+}
+.header-story-icon-list ul {
+position: absolute;
+list-style: none;
+}
+.header-story-icon-list ul li {
 position: relative;
-padding: 4%;
-margin-bottom: 10%;
-min-width: 40%;
-max-width: 40%;
+font: normal $fontsize_large $wingdings;
+padding: 5%;
+margin: 5%;
 }
-#content::before, .code::before {
+.header-story-icon-list ul li:hover {
+color: $white;
+text-shadow:rgba(0,0,0,0.8) 0 20px 35px;
+}
+.content {
+position: relative;
+visibility:hidden;
+border: 1px solid rgba(0, 0, 0, .5);
+background: $dark;
+color: $yellow;
+height: 500px;
+width: 80%;
+left: 10%;
+border-radius: 0 0 5px 5px;
+font: normal $fontsize_small $computerfont;
+-webkit-box-shadow: 2px 2px 3px #afafaf;
+-moz-box-shadow: 2px 2px 3px #afafaf;
+box-shadow: 2px 2px 1px #afafaf;
+}
+.content ul {
+list-style: none;
+}
+.content::before {
 content: ".";
 text-indent: -9999em;
 display: block;
@@ -62,104 +93,46 @@ line-height: 1px;
 background: -webkit-gradient( linear, left bottom, left top, color-stop(0, #999), color-stop(0.98, #CCC), color-stop(0.99, white) );
 border-radius: 5px 5px 0 0;
 }
-#content {
+.promptwords li {
+display:none;
 position: absolute;
-visibility:hidden;
-border: 1px solid rgba(0, 0, 0, .5);
-background: white;
-left: 10%;
-right: 10%;
-width: 80%;
-color: $black;
-border-radius: 0 0 5px 5px;
-}
-.code-title, .code {
-position: absolute;
-min-width: 40%;
-font: normal $fontsize_small $computerfont;
+padding: 5%;
 color: $yellow;
-background: $dark;
-margin-top: 15%;
-padding: 11% 6% 11% 6%;
--webkit-box-shadow: 2px 2px 3px #afafaf;
--moz-box-shadow: 2px 2px 3px #afafaf;
-box-shadow: 2px 2px 1px #afafaf;
-	span.blinking-cursor-one, span.blinking-cursor-two, span.blinking-cursor-three, span.blinking-cursor-four {
-	font: normal $fontsize $computerfont;
-	visibility: hidden;
-	}
+font: normal $fontsize $computerfont, Georgia, serif;
 }
-.code {
-border: 1px solid $grey;
-border-bottom-left-radius: 5px;
-border-bottom-right-radius: 5px;
+.header-story-icon-list li:hover{
+	cursor:pointer;	
 }
-.light {
-color: $light;
+.codewords{
+display:none;
+position:absolute;
+top:5px;
+left:140%;
+padding:10px;
+border-radius:5px;
+background:$dark;
+font: normal 20px $computerfont, Georgia, serif;
+z-index: 1;
 }
-.dark {
-color: $dark;
-}
-.blue {
-color: $blue;
-}
-.green {
-color: $green;
-}
-.orange {
-color: $orange;
-}
-.purple {
-color: $purple;
-}
-.red {
-color: $red;
-}
-.fontsize {
-font: normal $fontsize $computerfont;
-}
-.story {
-	display:inline-block;
-	list-style-type: none;
-	div.story-icon {
-		font: normal $fontsize_large $wingdings;
-	}
-	div.story-title {
-		font: normal $fontsize $computerfont;
-		transform: rotate(10deg);
-	}
-	div.story-content {
-		font: normal $fontsize_small $computerfont;
-	}
-}
-.short-story {
-	display: inline-block;
-	list-style-type: none;
-	div.short-story-icon {
-		font: normal 40px $wingdings;
-		span.short-story-title {
-		padding: 0 0 0 3%;
-		font: normal $fontsize $computerfont;
-		}
-	}
-}
-.info {
-	display:inline;
+.codewords:after {
+display:block;
+position:absolute;
+top:10px;
+left:-10px;
+width: 0;
+height: 0;
+content:".";
+text-indent:-9999em;
+border-right: 10px solid $dark;
+border-bottom: 10px solid transparent;
+border-top: 10px solid transparent;
 }
 .exclamation {
-	position: relative;
-	font: normal $fontsize $computerfont;
-	text-align: center;
-	padding: 5%;
-	margin-top: 5%;
-	background: $light;
-}
-.headline {
-	font: normal $fontsize $computerfont;
-	text-align: left;
-	padding: 20px;
-}
-.man {
-	padding: 0 0 2% 3%;
-	left: 5%;
+display: none;
+position: relative;
+font: normal $fontsize $computerfont;
+text-align: center;
+padding: 5%;
+margin-top: 5%;
+background: $white;
 }

@@ -1,0 +1,63 @@
+
+<ul id ="story-icon-list">
+<li class="story"><div class="story-icon"><span class="">V</span></div><div class="story-title">Play as a sorcerous!</div><div class="story-content">Fireballs, heal spells, and more!</div><div class="code"><span class="light">$</span> Would you like to play as a Warrior or Sorcerous?  <span class="light">S  <span class="blinking-cursor-one">∎</span></span></div></li>
+<li class="story"><div class="story-icon"><span class="">G</span></div><div class="story-title">Or play as warrior!</div><div class="story-content">Sword hack and slash action!</div><div class="code"><span class="light">$</span> Would you like to play as a Warrior or Sorcerous?  <span class="light">W <span class="blinking-cursor-three">∎</span></span></div></li>
+<li class="story"><div class="story-icon"><span class="">E</span></div><div class="story-title">Explore Arcania!</div><div class="story-content">Meet monsters, heroes, and friends!</div><div class="code"><span class="light">$</span> You encounter a Dekrakon. It peers into your soul.  <span class="light"><span class="blinking-cursor-two">∎</span></span></div></li>
+<li class="story"><div class="story-icon"><span class="">g</span></div><div class="story-title">Reach level 60!</div><div class="story-content">Be the hero that saves the day!</div><div class="code"><span class="light">$</span> <span class="red">You reached level 60! You gained 5 attribute points!  </span><span class="light"><span class="blinking-cursor-four">∎</span></span></div></li>
+</ul>
+
+<div class="exclamation">The adventure of a lifetime is clicks away.</div>
+
+<ul>
+<li class="short-story"><div class="short-story-icon">D<span class="short-story-title">No downloads!</span></div></li>
+<li class="short-story"><div class="short-story-icon">O<span class="short-story-title">Works online!</span></div></li>
+<li class="short-story"><div class="short-story-icon">m<span class="short-story-title">Minimize!</span></div></li>
+<li class="short-story"><div class="short-story-icon">M<span class="short-story-title">Maximize!</span></div></li>
+</ul>
+
+
+<ul>
+<li class="short-story"><div class="short-story-icon">L<span class="short-story-title">System requirements</span></div></li>
+</ul>
+
+<li class="story"><div class="story-icon">L</div><div class="story-title">Rewrite history!</div>
+
+</ul>
+<div class="fine-print">L</div><div class="fine-print-message">The fine print.</div>
+<div class="fine-print-explained">System requirements:</div>
+<ul><li>Keyboard</li><li>256k RAM</li><li>386x or equivalent</li><li>Internet connection</li><li>Internet browser</li><li></ul>
+
+
+
+<ul>
+<li class="story"><div class="story-icon">H</div><div class="story-title">Defeat trolls!</div>
+
+<li class="story"><div class="story-icon">W</div><div class="story-title">Fight time itself!</div><div class="story-content">Save your people before it's too late!</div>
+<li class="story"><div class="story-icon">a</div><div class="story-title">Gain new abilities!</div><div class="story-content">Learn powerful abilities to defeat your enemies!</div>
+<li class="story"><div class="story-icon">r</div><div class="story-title">No download needed!</div><div class="story-content">Click here to play!</div>
+<li class="story"><div class="story-icon">q</div><div class="story-title">Stop anytime!</div><div class="story-content">Just close your browser!</div>
+</ul>
+
+
+
+
+<pre class="man">
+    _____         _____                 
+  ,'     `.     \/,---<                
+ /    I    \    ( )@ @(                
+|  HAVE A   \    C __>/                
+| LEVEL 60   >--  \\//                
+| CHARACTER /   ,- >o<-.             
+ \         /   /   \/   \  
+  `._____,'   / /|  | |\ \  
+             / '--/_| |/ /     
+             `----\_) |_/    
+                 |____|_\         
+                 |  | |               
+                 |  | |             
+                 |  | |                
+                 |__|_|_              
+                 (____)_)              
+</pre>
+
+</div>
